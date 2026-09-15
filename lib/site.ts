@@ -21,8 +21,9 @@ export const site = {
 
   hero: {
     badge: "CONTAINER • SALA • LAVANDERIA",
-    title: "O mercado autônomo que nasce do perfil dos moradores.",
-    text: "Projetamos mercados inteligentes personalizados para condomínios com curadoria de produtos baseada no comportamento real dos moradores.",
+    title: "Conveniência inteligente para condomínios.",
+    text: "Mercados personalizados, lavanderia e operação 24 horas baseados no perfil real dos moradores.",
+    image: "/images/hero-container.webp",
   },
 
   differentials: [
@@ -60,6 +61,7 @@ export const site = {
       kind: "container",
       title: "Mercado em Container",
       text: "Ideal para condomínios sem espaço interno.",
+      image: "/images/container.webp",
       simulator: {
         label: "Container",
         description:
@@ -75,6 +77,7 @@ export const site = {
       kind: "sala",
       title: "Mercado em Sala",
       text: "Transformamos áreas ociosas em mercados premium.",
+      image: "/images/sala.webp",
       simulator: {
         label: "Sala",
         description:
@@ -90,6 +93,7 @@ export const site = {
       kind: "lavanderia",
       title: "Mercado + Lavanderia",
       text: "Dois serviços em um único ambiente.",
+      image: "/images/lavanderia.webp",
       simulator: {
         label: "Lavanderia",
         description:
@@ -112,6 +116,9 @@ export const site = {
 } as const;
 
 export type SolutionKind = (typeof site.solutions)[number]["kind"];
+
+// Arquivos de /public com o basePath do GitHub Pages (next/image não aplica o basePath sozinho).
+export const asset = (path: string) => `${process.env.NEXT_PUBLIC_BASE_PATH ?? ""}${path}`;
 
 export const whatsappUrl = `https://wa.me/${site.whatsapp}?text=${encodeURIComponent(
   site.whatsappMessage,

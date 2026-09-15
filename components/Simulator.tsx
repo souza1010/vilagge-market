@@ -1,10 +1,10 @@
 "use client";
 
 import { AnimatePresence, motion } from "framer-motion";
+import Image from "next/image";
 import { useState } from "react";
 import Icon from "@/components/Icons";
-import SolutionArt from "@/components/SolutionArt";
-import { site, type SolutionKind } from "@/lib/site";
+import { asset, site, type SolutionKind } from "@/lib/site";
 
 export default function Simulator() {
   const [kind, setKind] = useState<SolutionKind>("container");
@@ -66,7 +66,16 @@ export default function Simulator() {
               transition={{ duration: 0.4, ease: "easeOut" }}
               className="grid items-center lg:grid-cols-2"
             >
-              <SolutionArt kind={kind} className="aspect-[40/26] h-auto w-full" />
+              <div className="relative aspect-[40/26] w-full">
+                <Image
+                  src={asset(current.image)}
+                  alt={current.title}
+                  fill
+                  sizes="(min-width: 1024px) 50vw, 100vw"
+                  loading="lazy"
+                  className="object-cover"
+                />
+              </div>
               <div className="p-8 sm:p-12">
                 <h3 className="text-2xl font-bold text-ink sm:text-3xl">{current.title}</h3>
                 <p className="mt-4 text-lg font-normal leading-relaxed text-ink/65">

@@ -12,8 +12,8 @@ const fadeUp = (delay: number) => ({
 
 export default function Hero() {
   return (
-    <section id="inicio" className="relative flex min-h-screen items-center pt-20">
-      <div className="mx-auto grid w-full max-w-7xl items-center gap-14 px-5 py-16 sm:px-8 lg:grid-cols-2 lg:gap-20">
+    <section id="inicio" className="relative flex min-h-screen items-center bg-ivory pt-20">
+      <div className="mx-auto grid w-full max-w-7xl items-center gap-12 px-5 py-16 sm:px-8 lg:grid-cols-[45fr_55fr] lg:gap-14">
         <div>
           <motion.span
             {...fadeUp(0)}

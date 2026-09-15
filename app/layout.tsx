@@ -1,5 +1,6 @@
 import type { Metadata } from "next";
 import { Sora } from "next/font/google";
+import { asset } from "@/lib/site";
 import "./globals.css";
 
 const sora = Sora({
@@ -12,6 +13,7 @@ export const metadata: Metadata = {
   title: "Vilagge Market | Mercado Inteligente para Condomínios",
   description:
     "Mercados autônomos em container, sala ou lavanderia para condomínios. Solução personalizada com pesquisa de consumo e operação 24 horas.",
+  icons: { icon: { url: asset("/favicon.svg"), type: "image/svg+xml" } },
 };
 
 export default function RootLayout({ children }: LayoutProps<"/">) {

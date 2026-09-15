@@ -27,7 +27,7 @@ export default function Navbar() {
     >
       <div className="mx-auto flex h-20 max-w-7xl items-center justify-between px-5 sm:px-8">
         <a href="#inicio" aria-label="Vilagge Market — início">
-          <Logo className="h-10 w-auto" />
+          <Logo preload className="h-10 w-auto" />
         </a>
 
         <nav className="hidden items-center gap-10 text-[15px] lg:flex">

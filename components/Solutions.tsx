@@ -1,9 +1,9 @@
 "use client";
 
 import { motion } from "framer-motion";
+import Image from "next/image";
 import Icon from "@/components/Icons";
-import SolutionArt from "@/components/SolutionArt";
-import { site } from "@/lib/site";
+import { asset, site } from "@/lib/site";
 
 export default function Solutions() {
   return (
@@ -31,18 +31,29 @@ export default function Solutions() {
               whileHover={{ y: -8, scale: 1.02, transition: { duration: 0.3 } }}
               viewport={{ once: true, margin: "-80px" }}
               transition={{ duration: 0.6, delay: i * 0.1 }}
-              className="flex flex-col overflow-hidden rounded-3xl border border-ink/5 bg-white shadow-soft transition-shadow duration-300 hover:shadow-lift"
+              className="group flex flex-col overflow-hidden rounded-3xl border border-ink/5 bg-white shadow-soft transition-shadow duration-500 hover:shadow-lift"
             >
-              <SolutionArt kind={s.kind} className="aspect-[40/26] h-auto w-full" />
-              <div className="flex flex-1 flex-col p-8">
-                <h3 className="text-2xl font-bold text-ink">{s.title}</h3>
+              <div className="relative m-2 aspect-[40/26] overflow-hidden rounded-2xl bg-sage-light">
+                <Image
+                  src={asset(s.image)}
+                  alt={s.title}
+                  fill
+                  sizes="(min-width: 1024px) 33vw, 100vw"
+                  loading="lazy"
+                  className="object-cover transition duration-700 ease-out group-hover:scale-105"
+                />
+              </div>
+              <div className="flex flex-1 flex-col px-8 pt-6 pb-8">
+                <h3 className="text-2xl font-bold tracking-tight text-ink">{s.title}</h3>
                 <p className="mt-3 flex-1 font-normal leading-relaxed text-ink/65">{s.text}</p>
                 <a
                   href="#simulador"
-                  className="mt-8 inline-flex items-center gap-2 self-start rounded-full border border-ink/15 px-6 py-3 text-sm text-ink transition hover:border-sage hover:bg-sage hover:text-white"
+                  className="group/btn mt-8 inline-flex items-center gap-3 self-start rounded-full bg-ivory py-2 pr-2 pl-6 text-sm text-ink ring-1 ring-ink/10 transition duration-300 hover:bg-sage hover:text-white hover:ring-sage"
                 >
                   Saiba mais
-                  <Icon name="arrow" className="h-4 w-4" />
+                  <span className="grid h-9 w-9 place-items-center rounded-full bg-sage text-white transition duration-300 group-hover/btn:translate-x-0.5 group-hover/btn:bg-white group-hover/btn:text-sage">
+                    <Icon name="arrow" className="h-4 w-4" />
+                  </span>
                 </a>
               </div>
             </motion.article>
