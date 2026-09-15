@@ -15,7 +15,7 @@ export default function HeroRender({ className = "" }: { className?: string }) {
     >
       <Image
         src={asset(site.hero.image)}
-        alt="Vilagge Market em container com fachada em vidro, pergolado de madeira e paisagismo"
+        alt={site.hero.imageAlt}
         width={1600}
         height={1300}
         sizes="(min-width: 1024px) 55vw, 100vw"

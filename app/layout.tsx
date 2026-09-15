@@ -9,11 +9,26 @@ const sora = Sora({
   weight: ["400", "500", "700"],
 });
 
+const title = "Vilagge Market | O mercado que conhece o seu condomínio";
+const description =
+  "Mercados autônomos personalizados para condomínios, em espaço existente ou container, com operação Vilagge e conveniência 24 horas para os moradores.";
+
 export const metadata: Metadata = {
-  title: "Vilagge Market | Mercado Inteligente para Condomínios",
-  description:
-    "Mercados autônomos em container, sala ou lavanderia para condomínios. Solução personalizada com pesquisa de consumo e operação 24 horas.",
+  // TODO: trocar pelo domínio oficial quando existir
+  metadataBase: new URL("https://souza1010.github.io"),
+  title,
+  description,
+  alternates: { canonical: asset("/") },
   icons: { icon: { url: asset("/favicon.svg"), type: "image/svg+xml" } },
+  openGraph: {
+    type: "website",
+    locale: "pt_BR",
+    siteName: "Vilagge Market",
+    title,
+    description,
+    url: asset("/"),
+    images: [{ url: asset("/images/hero-container.webp"), width: 1600, height: 1300, alt: "Vilagge Market em container" }],
+  },
 };
 
 export default function RootLayout({ children }: LayoutProps<"/">) {

@@ -30,9 +30,9 @@ export default function Navbar() {
           <Logo preload className="h-10 w-auto" />
         </a>
 
-        <nav className="hidden items-center gap-10 text-[15px] lg:flex">
+        <nav aria-label="Principal" className="hidden items-center gap-9 text-[15px] lg:flex">
           {site.nav.map((l) => (
-            <a key={l.href} href={l.href} className="text-ink/70 transition hover:text-ink">
+            <a key={l.href} href={l.href} className="text-ink/80 transition hover:text-ink">
               {l.label}
             </a>
           ))}
@@ -41,9 +41,9 @@ export default function Navbar() {
         <div className="flex items-center gap-2">
           <a
             href="#contato"
-            className="hidden rounded-full bg-sage px-6 py-3 text-sm text-white transition hover:bg-sage-dark sm:inline-flex"
+            className="hidden rounded-full bg-sage-dark px-6 py-3 text-sm text-white transition hover:bg-sage-deep sm:inline-flex"
           >
-            Solicitar Estudo
+            Falar com a Vilagge
           </a>
           <button
             type="button"
@@ -60,6 +60,7 @@ export default function Navbar() {
       <AnimatePresence>
         {open && (
           <motion.nav
+            aria-label="Menu"
             initial={{ opacity: 0, height: 0 }}
             animate={{ opacity: 1, height: "auto" }}
             exit={{ opacity: 0, height: 0 }}
@@ -80,9 +81,9 @@ export default function Navbar() {
               <a
                 href="#contato"
                 onClick={() => setOpen(false)}
-                className="mt-3 rounded-full bg-sage px-6 py-4 text-center text-white"
+                className="mt-3 rounded-full bg-sage-dark px-6 py-4 text-center text-white"
               >
-                Solicitar Estudo
+                Falar com a Vilagge
               </a>
             </div>
           </motion.nav>

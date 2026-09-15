@@ -1,118 +1,180 @@
 // Conteúdo do site em um só lugar.
-// Troque os valores marcados com TODO pelos dados reais do Vilagge Market.
+// Troque os valores marcados com TODO pelos dados reais da Vilagge.
 
 export const site = {
   name: "Vilagge Market",
-  tagline: "O mercado inteligente do seu condomínio.",
-  footerPhrase: "Condomínios mais modernos. Moradores mais felizes.",
+  footerPhrase: "O mercado que conhece o seu condomínio.",
 
   // TODO: número real com DDI + DDD, só dígitos (ex.: 5511999999999)
   whatsapp: "5500000000000",
-  whatsappMessage: "Olá! Vim pelo site do Vilagge Market.",
+  whatsappMessage: "Olá! Quero entender como levar a Vilagge para o meu condomínio.",
   // TODO: usuário real do Instagram, sem @
   instagram: "vilaggemarket",
 
   nav: [
-    { href: "#inicio", label: "Início" },
-    { href: "#solucoes", label: "Soluções" },
     { href: "#metodo", label: "Método V.360™" },
+    { href: "#modelo", label: "Para o condomínio" },
+    { href: "#solucoes", label: "Soluções" },
     { href: "#contato", label: "Contato" },
   ],
 
   hero: {
-    badge: "CONTAINER • SALA • LAVANDERIA",
-    title: "Conveniência inteligente para condomínios.",
-    text: "Mercados personalizados, lavanderia e operação 24 horas baseados no perfil real dos moradores.",
+    badge: "Antes de vender, a Vilagge entende.",
+    title: "O mercado que conhece o seu condomínio.",
+    text: "Mercados autônomos personalizados para cada condomínio, com operação completa da Vilagge e conveniência 24 horas para os moradores.",
+    // TODO: substituir por imagem oficial Vilagge (container — fachada dia)
     image: "/images/hero-container.webp",
+    imageAlt: "Vilagge Market em container com fachada em vidro, pergolado de madeira e paisagismo",
   },
 
-  differentials: [
-    {
-      icon: "wallet",
-      title: "Preços Competitivos",
-      text: "Preços justos, alinhados ao mercado, sem sair do condomínio.",
-    },
-    {
-      icon: "users",
-      title: "Pesquisa com Moradores",
-      text: "O mix de produtos nasce do que os moradores realmente consomem.",
-    },
-    {
-      icon: "smartphone",
-      title: "QR Code 24h",
-      text: "Compra rápida pelo celular, a qualquer hora do dia.",
-    },
-    {
-      icon: "chart",
-      title: "Gestão Completa",
-      text: "Reposição, limpeza e operação inteiramente por nossa conta.",
-    },
-  ],
+  problem: {
+    title: "Conveniência não deveria significar pagar mais e encontrar menos.",
+    text: "Mercados de condomínio costumam repetir os mesmos problemas. A Vilagge nasceu para resolvê-los.",
+    items: [
+      {
+        icon: "tag",
+        title: "Preços fora da realidade",
+        text: "A conveniência vira desculpa para preços excessivamente altos.",
+      },
+      {
+        icon: "package",
+        title: "Falta do que importa",
+        text: "Abastecimento ineficiente deixa as prateleiras sem os itens mais procurados.",
+      },
+      {
+        icon: "layers",
+        title: "Mix que não conversa com o morador",
+        text: "O mesmo sortimento para perfis diferentes, com muitos produtos de pouco giro.",
+      },
+      {
+        icon: "eye",
+        title: "Pouco conhecimento de quem compra",
+        text: "Sem entender os moradores, o mercado não evolui.",
+      },
+    ],
+    concept: "Antes de vender, a Vilagge entende.",
+    quote: "Não queremos ser o mercado mais cheio. Queremos ser o mercado que tem aquilo que você procura.",
+  },
 
-  method: [
-    { title: "Pesquisa de consumo", text: "Marcas, hábitos e necessidades." },
-    { title: "Análise inteligente", text: "Identificamos os produtos com maior potencial." },
-    { title: "Curadoria personalizada", text: "Cada condomínio recebe um mix exclusivo." },
-    { title: "Reposição contínua", text: "O estoque evolui conforme as vendas." },
-  ],
+  method: {
+    title: "Método V.360™",
+    text: "A Vilagge estuda o condomínio antes e depois da implantação. O mercado evolui com os dados reais de consumo.",
+    message: "Cada condomínio recebe um mercado diferente, porque cada comunidade consome de um jeito.",
+    steps: [
+      { icon: "users", title: "Conhecer", text: "Entender os moradores e seus hábitos." },
+      { icon: "grid", title: "Selecionar", text: "Definir produtos, marcas e categorias relevantes." },
+      { icon: "package", title: "Abastecer", text: "Usar dados de consumo para reduzir rupturas e melhorar a reposição." },
+      { icon: "chart", title: "Evoluir", text: "Analisar as vendas continuamente e adaptar o mercado." },
+    ],
+  },
+
+  model: {
+    title: "Seu condomínio ganha conveniência sem precisar operar um mercado.",
+    text: "O condomínio não compra o mercado. A Vilagge realiza o investimento da implantação e fica responsável pela operação e pelos seus resultados.",
+    parties: [
+      { icon: "building", name: "Condomínio", role: "Disponibiliza o espaço." },
+      { icon: "leaf", name: "Vilagge", role: "Planeja, investe, instala e opera." },
+      { icon: "home", name: "Moradores", role: "Ganham conveniência 24 horas dentro do condomínio." },
+    ],
+    responsibilities: [
+      "Estudo do condomínio",
+      "Investimento na implantação",
+      "Instalação",
+      "Abastecimento",
+      "Administração",
+      "Tecnologia e manutenção",
+      "Acompanhamento de vendas e estoque",
+    ],
+    note: "A disponibilização do espaço segue as condições comerciais acordadas com cada condomínio.",
+  },
 
   solutions: [
     {
-      kind: "container",
-      title: "Mercado em Container",
-      text: "Ideal para condomínios sem espaço interno.",
-      image: "/images/container.webp",
+      kind: "sala",
+      eyebrow: "Vilagge Market",
+      title: "Espaço do condomínio",
+      text: "Quando o condomínio já possui uma sala ou espaço adequado, a Vilagge transforma o ambiente em um mercado autônomo.",
+      // TODO: substituir por imagem oficial Vilagge (mercado instalado em sala existente)
+      image: "/images/sala.webp",
+      features: ["Aproveita um espaço existente", "Projeto sob medida para o ambiente"],
       simulator: {
-        label: "Container",
+        label: "Tenho um espaço",
         description:
-          "Uma estrutura arquitetônica instalada na área externa, integrada ao paisagismo e sem obras dentro do condomínio.",
+          "Uma sala ou área disponível vira um mercado autônomo completo, projetado para o ambiente e para o perfil dos moradores.",
         benefits: [
-          "Instalação rápida e sem obras internas",
-          "Não ocupa áreas comuns cobertas",
-          "Fachada em vidro e pergolado de madeira",
+          "Aproveita um espaço que o condomínio já tem",
+          "Layout e mix planejados para o ambiente",
+          "Totem de autoatendimento dentro da loja",
         ],
       },
     },
     {
-      kind: "sala",
-      title: "Mercado em Sala",
-      text: "Transformamos áreas ociosas em mercados premium.",
-      image: "/images/sala.webp",
+      kind: "container",
+      eyebrow: "Vilagge Market",
+      title: "Container",
+      text: "Quando não existe espaço interno disponível, a Vilagge implanta uma unidade modular integrada à arquitetura e ao paisagismo.",
+      // TODO: substituir por imagem oficial Vilagge (container — fachada dia)
+      image: "/images/container.webp",
+      features: ["Não depende de espaço interno", "Integrado ao paisagismo"],
       simulator: {
-        label: "Sala",
+        label: "Não tenho espaço",
         description:
-          "Uma sala sem uso vira um empório completo, com marcenaria sob medida e iluminação acolhedora.",
+          "Uma unidade modular bonita, com fachada em vidro e acabamento em madeira, pensada para fazer parte do condomínio.",
         benefits: [
-          "Aproveita um espaço que já existe",
-          "Projeto de marcenaria personalizado",
-          "Menor custo de implantação",
+          "Não depende de uma sala disponível",
+          "Integrada à arquitetura e ao paisagismo",
+          "Loja completa com totem interno e operação 24h",
         ],
       },
     },
     {
       kind: "lavanderia",
+      eyebrow: "Vilagge Market",
       title: "Mercado + Lavanderia",
-      text: "Dois serviços em um único ambiente.",
+      text: "Uma unidade maior que integra mercado autônomo e lavanderia no mesmo espaço.",
+      // TODO: substituir por imagem oficial Vilagge (container maior com mercado + lavanderia integrada)
       image: "/images/lavanderia.webp",
+      features: ["Duas máquinas lava e seca", "Circulação central livre"],
       simulator: {
-        label: "Lavanderia",
+        label: "Com lavanderia",
         description:
-          "Mercado e lavanderia compartilhada no mesmo ambiente: enquanto a roupa lava, o morador faz as compras.",
+          "Mercado e lavanderia no mesmo container: a lavanderia complementa a conveniência do dia a dia dos moradores.",
         benefits: [
-          "Dois serviços em um só espaço",
-          "Mais frequência de uso",
-          "Conveniência completa para o dia a dia",
+          "Mercado e lavanderia integrados no mesmo espaço",
+          "Duas máquinas lava e seca",
+          "Circulação central livre, sem gôndolas no meio",
         ],
       },
     },
   ],
 
-  timeline: [
-    { icon: "clipboard", title: "Estudo gratuito", text: "Entendemos o condomínio e o perfil dos moradores." },
-    { icon: "ruler", title: "Projeto personalizado", text: "Formato, layout e mix de produtos sob medida." },
-    { icon: "tool", title: "Instalação", text: "Montagem completa, sem trabalho para o síndico." },
-    { icon: "clock", title: "Operação 24h", text: "Mercado aberto todos os dias, a qualquer hora." },
+  experience: {
+    title: "Entre. Escolha. Pague. Pronto.",
+    text: "Um mercado autônomo, aberto 24 horas, a poucos passos de casa.",
+    // TODO: substituir por imagem oficial Vilagge (interior realista do container)
+    image: "/images/sala.webp",
+    imageAlt: "Interior de um mercado Vilagge com prateleiras, geladeira e totem de autoatendimento",
+    steps: [
+      { icon: "door", title: "Entre", text: "Acesse a loja a qualquer hora do dia." },
+      { icon: "bag", title: "Escolha", text: "Produtos selecionados para o perfil do seu condomínio." },
+      { icon: "smartphone", title: "Pague", text: "No totem de autoatendimento, dentro da loja." },
+      { icon: "check", title: "Pronto", text: "Sem filas e sem caixa convencional." },
+    ],
+  },
+
+  differentials: [
+    { icon: "clock", title: "Aberto 24h", text: "Conveniência a qualquer hora, todos os dias." },
+    { icon: "grid", title: "Mix personalizado", text: "Produtos escolhidos a partir do perfil de cada condomínio." },
+    { icon: "chart", title: "Gestão baseada em dados", text: "Decisões guiadas pelo consumo real dos moradores." },
+    { icon: "refresh", title: "Reposição inteligente", text: "Abastecimento planejado para reduzir faltas." },
+    { icon: "spark", title: "Ambiente premium", text: "Espaços acolhedores, bem iluminados e bem cuidados." },
+    { icon: "shield", title: "Operação Vilagge", text: "Instalação, abastecimento e tecnologia com a Vilagge." },
   ],
+
+  finalCta: {
+    title: "Quer entender qual modelo faz sentido para o seu condomínio?",
+    button: "Falar com a Vilagge",
+  },
 } as const;
 
 export type SolutionKind = (typeof site.solutions)[number]["kind"];

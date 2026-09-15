@@ -17,8 +17,9 @@ export default function Hero() {
         <div>
           <motion.span
             {...fadeUp(0)}
-            className="inline-flex rounded-full border border-sage/25 bg-white/60 px-4 py-2 text-xs tracking-[0.18em] text-sage"
+            className="inline-flex items-center gap-2 rounded-full border border-sage/25 bg-white/70 px-4 py-2 text-sm text-sage-dark"
           >
+            <span className="h-1.5 w-1.5 rounded-full bg-amber" aria-hidden />
             {site.hero.badge}
           </motion.span>
           <motion.h1
@@ -27,21 +28,21 @@ export default function Hero() {
           >
             {site.hero.title}
           </motion.h1>
-          <motion.p {...fadeUp(0.2)} className="mt-6 max-w-xl text-lg font-normal leading-relaxed text-ink/70">
+          <motion.p {...fadeUp(0.2)} className="mt-6 max-w-xl text-lg font-normal leading-relaxed text-ink/80">
             {site.hero.text}
           </motion.p>
-          <motion.div {...fadeUp(0.3)} className="mt-10 flex flex-col gap-3 sm:flex-row">
+          <motion.div {...fadeUp(0.3)} className="mt-10 flex flex-col gap-3 sm:flex-row sm:flex-wrap">
             <a
               href="#contato"
-              className="rounded-full bg-sage px-8 py-4 text-center text-white shadow-soft transition hover:bg-sage-dark"
+              className="rounded-full bg-sage-dark px-8 py-4 text-center text-white shadow-soft transition hover:bg-sage-deep sm:whitespace-nowrap"
             >
-              Solicitar Estudo Gratuito
+              Quero a Vilagge no meu condomínio
             </a>
             <a
-              href="#solucoes"
-              className="rounded-full border border-ink/20 px-8 py-4 text-center text-ink transition hover:border-ink/40 hover:bg-white/60"
+              href="#metodo"
+              className="rounded-full border border-ink/20 px-8 py-4 text-center text-ink transition hover:border-ink/40 hover:bg-white/60 sm:whitespace-nowrap"
             >
-              Conhecer Soluções
+              Conheça como funciona
             </a>
           </motion.div>
         </div>
