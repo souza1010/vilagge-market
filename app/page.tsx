@@ -1,23 +1,25 @@
-import Contact from "@/components/Contact";
-import Features from "@/components/Features";
+import Differentials from "@/components/Differentials";
 import Footer from "@/components/Footer";
-import Header from "@/components/Header";
 import Hero from "@/components/Hero";
 import HowItWorks from "@/components/HowItWorks";
-import Location from "@/components/Location";
-import Products from "@/components/Products";
+import LeadForm from "@/components/LeadForm";
+import Method from "@/components/Method";
+import Navbar from "@/components/Navbar";
+import Simulator from "@/components/Simulator";
+import Solutions from "@/components/Solutions";
 
 export default function Home() {
   return (
     <>
-      <Header />
+      <Navbar />
       <main>
         <Hero />
+        <Differentials />
+        <Method />
+        <Solutions />
         <HowItWorks />
-        <Products />
-        <Features />
-        <Location />
-        <Contact />
+        <Simulator />
+        <LeadForm />
       </main>
       <Footer />
     </>

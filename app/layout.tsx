@@ -1,30 +1,23 @@
 import type { Metadata } from "next";
-import { Bricolage_Grotesque, Inter } from "next/font/google";
-import { site } from "@/lib/site";
+import { Sora } from "next/font/google";
 import "./globals.css";
 
-const sans = Inter({
-  variable: "--font-inter",
+const sora = Sora({
+  variable: "--font-sora",
   subsets: ["latin"],
-});
-
-const display = Bricolage_Grotesque({
-  variable: "--font-bricolage",
-  subsets: ["latin"],
+  weight: ["400", "500", "700"],
 });
 
 export const metadata: Metadata = {
-  title: `${site.name} — Minimercado 24h`,
-  description: site.description,
+  title: "Vilagge Market | Mercado Inteligente para Condomínios",
+  description:
+    "Mercados autônomos em container, sala ou lavanderia para condomínios. Solução personalizada com pesquisa de consumo e operação 24 horas.",
 };
 
 export default function RootLayout({ children }: LayoutProps<"/">) {
   return (
-    <html
-      lang="pt-BR"
-      className={`${sans.variable} ${display.variable} h-full antialiased`}
-    >
-      <body className="min-h-full flex flex-col font-sans">{children}</body>
+    <html lang="pt-BR" className={`${sora.variable} h-full antialiased`}>
+      <body className="min-h-full flex flex-col font-sans font-medium">{children}</body>
     </html>
   );
 }

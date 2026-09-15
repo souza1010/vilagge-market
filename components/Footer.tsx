@@ -1,13 +1,52 @@
-import { site } from "@/lib/site";
+import Icon from "@/components/Icons";
+import Logo from "@/components/Logo";
+import { instagramUrl, site, whatsappUrl } from "@/lib/site";
 
 export default function Footer() {
   return (
-    <footer className="mt-auto bg-forest-dark text-cream/70">
-      <div className="mx-auto flex max-w-6xl flex-col items-center justify-between gap-2 px-4 py-8 text-sm sm:flex-row sm:px-6">
-        <p className="font-display font-semibold text-cream">{site.name}</p>
-        <p>
+    <footer className="mt-auto bg-sage text-ivory">
+      <div className="mx-auto max-w-7xl px-5 pt-20 pb-10 sm:px-8">
+        <div className="grid gap-12 md:grid-cols-[1.5fr_1fr_1fr]">
+          <div>
+            <Logo variant="light" className="h-12 w-auto" />
+            <p className="mt-6 max-w-sm text-2xl font-bold leading-snug">{site.footerPhrase}</p>
+          </div>
+
+          <nav aria-label="Rodapé">
+            <p className="text-xs tracking-[0.18em] text-ivory/60">NAVEGAÇÃO</p>
+            <ul className="mt-5 space-y-3">
+              {site.nav.map((l) => (
+                <li key={l.href}>
+                  <a href={l.href} className="font-normal text-ivory/85 transition hover:text-white">
+                    {l.label}
+                  </a>
+                </li>
+              ))}
+            </ul>
+          </nav>
+
+          <div>
+            <p className="text-xs tracking-[0.18em] text-ivory/60">FALE CONOSCO</p>
+            <ul className="mt-5 space-y-3">
+              <li>
+                <a href={whatsappUrl} target="_blank" rel="noopener noreferrer" className="inline-flex items-center gap-3 font-normal text-ivory/85 transition hover:text-white">
+                  <Icon name="whatsapp" className="h-5 w-5" />
+                  WhatsApp
+                </a>
+              </li>
+              <li>
+                <a href={instagramUrl} target="_blank" rel="noopener noreferrer" className="inline-flex items-center gap-3 font-normal text-ivory/85 transition hover:text-white">
+                  <Icon name="instagram" className="h-5 w-5" />
+                  Instagram
+                </a>
+              </li>
+            </ul>
+          </div>
+        </div>
+
+        <div className="mt-16 border-t border-ivory/20 pt-8 text-sm font-normal text-ivory/70">
           © {new Date().getFullYear()} {site.name}. Todos os direitos reservados.
-        </p>
+        </div>
       </div>
     </footer>
   );
