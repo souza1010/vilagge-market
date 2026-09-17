@@ -39,3 +39,7 @@ yarn-error.log*
 # typescript
 *.tsbuildinfo
 next-env.d.ts
+
+# masters e originais de imagem: ficam no computador, nao no repositorio
+/assets-originais/*
+!/assets-originais/masters-village-aprovados/

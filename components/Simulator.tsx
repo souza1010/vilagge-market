@@ -67,7 +67,7 @@ export default function Simulator() {
               transition={{ duration: 0.4, ease: "easeOut" }}
               className="grid items-center lg:grid-cols-2"
             >
-              <div className="relative aspect-[40/26] w-full">
+              <div className="relative aspect-[16/9] w-full">
                 <Image
                   src={asset(current.image)}
                   alt={`${current.eyebrow} — ${current.title}`}
@@ -97,7 +97,7 @@ export default function Simulator() {
                   href="#contato"
                   className="mt-10 inline-flex rounded-full bg-sage-dark px-8 py-4 text-center text-white transition hover:bg-sage-deep"
                 >
-                  Quero a Vilagge no meu condomínio
+                  Quero a Village no meu condomínio
                 </a>
               </div>
             </motion.div>

@@ -38,7 +38,7 @@ export default function LeadForm() {
       >
         <div>
           <p className="text-sm tracking-[0.18em] text-wood">CONTATO</p>
-          <h2 className="mt-4 text-3xl font-bold tracking-tight text-ink sm:text-5xl">Fale com a Vilagge</h2>
+          <h2 className="mt-4 text-3xl font-bold tracking-tight text-ink sm:text-5xl">Fale com a Village</h2>
           <p className="mt-5 text-lg font-normal leading-relaxed text-ink/80">
             Conte um pouco sobre o seu condomínio. Vamos entender o espaço e o perfil dos moradores para indicar o
             modelo mais adequado.
@@ -70,7 +70,7 @@ export default function LeadForm() {
               disabled={status === "sending"}
               className="mt-2 inline-flex w-full items-center justify-center gap-2 rounded-full bg-sage-dark px-8 py-4 text-white transition hover:bg-sage-deep disabled:opacity-60 sm:w-auto"
             >
-              {status === "sending" ? "Enviando…" : "Enviar para a Vilagge"}
+              {status === "sending" ? "Enviando…" : "Enviar para a Village"}
               <Icon name="arrow" className="h-4 w-4" />
             </button>
             <p aria-live="polite" className="mt-4 text-sm font-normal">

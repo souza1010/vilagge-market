@@ -33,7 +33,7 @@ export default function Method() {
             <Reveal>
               <span className="inline-flex items-center gap-2 rounded-full bg-white px-4 py-2 text-xs tracking-[0.18em] text-sage-dark shadow-soft">
                 <span className="h-1.5 w-1.5 rounded-full bg-amber" aria-hidden />
-                EXCLUSIVO VILAGGE
+                EXCLUSIVO VILLAGE
               </span>
               <h2 className="mt-7 text-4xl font-bold tracking-tight text-ink sm:text-6xl">
                 Método V.360<span className="align-super text-2xl text-wood sm:text-3xl">™</span>
@@ -100,14 +100,14 @@ function Cycle() {
         </svg>
 
         {/* selo central */}
-        <div className="absolute left-1/2 top-1/2 h-[42%] w-[42%] -translate-x-1/2 -translate-y-1/2" role="img" aria-label="Método V.360, exclusivo Vilagge">
+        <div className="absolute left-1/2 top-1/2 h-[42%] w-[42%] -translate-x-1/2 -translate-y-1/2" role="img" aria-label="Método V.360, exclusivo Village">
           <svg viewBox="0 0 160 160" className="absolute inset-0 h-full w-full" aria-hidden>
             <defs>
               <path id="cycle-seal" d="M80 80m-62 0a62 62 0 1 1 124 0a62 62 0 1 1-124 0" />
             </defs>
             <circle cx="80" cy="80" r="78" fill="#FFFFFF" />
             <text fill="#557459" fontSize="10" fontWeight="500" letterSpacing="3.4">
-              <textPath href="#cycle-seal">EXCLUSIVO VILAGGE • MÉTODO V.360™ •</textPath>
+              <textPath href="#cycle-seal">EXCLUSIVO VILLAGE • MÉTODO V.360™ •</textPath>
             </text>
           </svg>
           <div className="absolute inset-[27%] grid place-items-center rounded-full bg-amber text-ink">

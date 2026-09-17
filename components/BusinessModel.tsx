@@ -2,7 +2,7 @@ import Icon from "@/components/Icons";
 import Reveal from "@/components/Reveal";
 import { site } from "@/lib/site";
 
-// Como funciona para o condomínio: Condomínio → Vilagge → Moradores.
+// Como funciona para o condomínio: Condomínio → Village → Moradores.
 export default function BusinessModel() {
   const { model } = site;
 

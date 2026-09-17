@@ -11,7 +11,7 @@ export default function HowItWorks() {
     <section id="experiencia" className="scroll-mt-20 bg-white py-24 sm:py-32">
       <div className="mx-auto grid max-w-7xl items-center gap-14 px-5 sm:px-8 lg:grid-cols-2 lg:gap-20">
         <Reveal className="order-2 lg:order-1">
-          <div className="relative aspect-[40/26] overflow-hidden rounded-3xl bg-sage-light shadow-soft">
+          <div className="relative aspect-[16/9] overflow-hidden rounded-3xl bg-sage-light shadow-soft">
             <Image
               src={asset(experience.image)}
               alt={experience.imageAlt}

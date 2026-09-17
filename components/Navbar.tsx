@@ -26,7 +26,7 @@ export default function Navbar() {
       }`}
     >
       <div className="mx-auto flex h-20 max-w-7xl items-center justify-between px-5 sm:px-8">
-        <a href="#inicio" aria-label="Vilagge Market — início">
+        <a href="#inicio" aria-label="Village Market — início">
           <Logo preload className="h-10 w-auto" />
         </a>
 
@@ -43,7 +43,7 @@ export default function Navbar() {
             href="#contato"
             className="hidden rounded-full bg-sage-dark px-6 py-3 text-sm text-white transition hover:bg-sage-deep sm:inline-flex"
           >
-            Falar com a Vilagge
+            Falar com a Village
           </a>
           <button
             type="button"
@@ -83,7 +83,7 @@ export default function Navbar() {
                 onClick={() => setOpen(false)}
                 className="mt-3 rounded-full bg-sage-dark px-6 py-4 text-center text-white"
               >
-                Falar com a Vilagge
+                Falar com a Village
               </a>
             </div>
           </motion.nav>

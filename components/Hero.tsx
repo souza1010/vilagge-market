@@ -36,7 +36,7 @@ export default function Hero() {
               href="#contato"
               className="rounded-full bg-sage-dark px-8 py-4 text-center text-white shadow-soft transition hover:bg-sage-deep sm:whitespace-nowrap"
             >
-              Quero a Vilagge no meu condomínio
+              Quero a Village no meu condomínio
             </a>
             <a
               href="#metodo"

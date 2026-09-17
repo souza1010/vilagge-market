@@ -36,7 +36,7 @@ export default function Solutions() {
               transition={{ duration: 0.6, delay: i * 0.1 }}
               className="group flex flex-col overflow-hidden rounded-3xl border border-ink/5 bg-white shadow-soft transition-shadow duration-500 hover:shadow-lift sm:flex-row lg:flex-col"
             >
-              <div className="relative m-2 aspect-[40/26] shrink-0 overflow-hidden rounded-2xl bg-sage-light sm:w-[44%] sm:self-start lg:w-auto lg:self-auto">
+              <div className="relative m-2 aspect-[16/9] shrink-0 overflow-hidden rounded-2xl bg-sage-light sm:w-[44%] sm:self-start lg:w-auto lg:self-auto">
                 <Image
                   src={asset(s.image)}
                   alt={`${s.eyebrow} — ${s.title}`}

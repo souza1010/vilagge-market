@@ -38,7 +38,7 @@ export async function submitLead(lead: Lead): Promise<"sent" | "whatsapp"> {
 
   const yesNo = (v: Lead["possuiSala"]) => (v === "sim" ? "Sim" : "Não");
   const message = [
-    "Olá! Quero entender como levar a Vilagge para o meu condomínio.",
+    "Olá! Quero entender como levar a Village para o meu condomínio.",
     `Condomínio: ${lead.condominio}`,
     `Nome: ${lead.nome}`,
     `Cidade: ${lead.cidade}`,

@@ -4,7 +4,7 @@ import { motion } from "framer-motion";
 import Image from "next/image";
 import { asset, site } from "@/lib/site";
 
-// Imagem do hero. Para usar o render 3D, substitua /public/images/hero-container.webp (mesma proporção 16:13).
+// Imagem do hero: mesmo arquivo final da solução Mercado + Lavanderia (16:9).
 export default function HeroRender({ className = "" }: { className?: string }) {
   return (
     <motion.div
@@ -17,7 +17,7 @@ export default function HeroRender({ className = "" }: { className?: string }) {
         src={asset(site.hero.image)}
         alt={site.hero.imageAlt}
         width={1600}
-        height={1300}
+        height={900}
         sizes="(min-width: 1024px) 55vw, 100vw"
         preload
         className="h-auto w-full"

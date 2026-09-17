@@ -14,8 +14,8 @@ export default function Logo({
   return (
     <Image
       src={asset(variant === "light" ? "/logo/logo-light.svg" : "/logo/logo.svg")}
-      alt="Vilagge Market"
-      width={182}
+      alt="Village Market"
+      width={171}
       height={56}
       preload={preload}
       className={className}
