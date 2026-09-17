@@ -23,7 +23,7 @@ Abra http://localhost:3000.
 ## Publicação
 
 Todo push na `main` roda `.github/workflows/deploy.yml`, que gera o site (`out/`) e publica em
-https://souza1010.github.io/vilagge-market/
+https://souza1010.github.io/village-market/
 
 Configuração única no GitHub: **Settings → Pages → Source: GitHub Actions**.
 
